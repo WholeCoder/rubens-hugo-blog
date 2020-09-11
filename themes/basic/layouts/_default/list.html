@@ -4,7 +4,7 @@
     <section id="s2">
     <h2>{{ .Title }}</h2>
     <ul>
-        {{ range .Pages }}
+        {{ range .Pages.ByDate.Reverse }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
     </ul>
