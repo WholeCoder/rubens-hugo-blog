@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ruben Pierich's Home on the Internet"
+theme = "basic"
