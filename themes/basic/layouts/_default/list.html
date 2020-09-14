@@ -3,6 +3,9 @@
     <section id="s1"></section>
     <section id="s2">
     <h2>{{ .Title }}</h2>
+    
+    {{ .Content }}
+
     <ul>
         {{ range .Pages.ByDate.Reverse }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
