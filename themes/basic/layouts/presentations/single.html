@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+ <section id="s1">Section 1</section>
+    <section id="s2">
+        <div class="project-container">
+
+            <section class="project-list">
+                <h2>Presentations</h2>
+                <br />
+                <ul>
+                    {{ range (where .Site.RegularPages "Type" "in" "presentations").ByDate.Reverse }}
+                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+            </section>
+
+            <section class="project">
+                <h2>{{ .Title }}</h2>
+                {{ .Content }}
+            </section>
+
+        </div>
+    </section>
+    <section id="s3">Section 3</section>
+
+{{ end }}

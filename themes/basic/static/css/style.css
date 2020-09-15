@@ -166,7 +166,7 @@ a.demolink:hover {
 
     .project-container { display: flex; }
 
-    .project-container .project-list { width: 20%; }
+    .project-container .project-list { width: 30%; }
 
     .project-container .project { flex: 1; }
 }

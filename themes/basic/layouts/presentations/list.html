@@ -3,10 +3,10 @@
     <section id="s1"></section>
     <section id="s2">
     <h2>{{ .Title }}</h2>
-    <section class="projects">    
+    <section class="projects">
     {{ .Content }}
 
-        {{ range .Pages }}
+        {{ range .Pages.ByDate.Reverse }}
             <section class="project">
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             </section>
