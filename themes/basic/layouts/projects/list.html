@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+    <section id="s1"></section>
+    <section id="s2">
+    <h2>{{ .Title }}</h2>
+    <section class="prjects">    
+    {{ .Content }}
+
+        {{ range .Pages }}
+            <section class="project">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            </section>
+        {{ end }}
+    </section>
+    </section>
+    <section id="s3"></section>
+{{ end }}
